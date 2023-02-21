@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Dude</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="title_activity_show_gps">Map</string>
+    <string name="title_activity_g_p_s">Map</string>
+    <string name="title_activity_retrieve_map">Map</string>
+</resources>

@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "739082654608",
+    "project_id": "dude-baru-f609a",
+    "storage_bucket": "dude-baru-f609a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:739082654608:android:cae2fb0560f5226fe51915",
+        "android_client_info": {
+          "package_name": "com.rifqi.dude2"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "739082654608-c4qt63goqbcsslm6gn3o3j425riq8olp.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.rifqi.dude2",
+            "certificate_hash": "1a803c675bdc4a1f9a6131f998382a3da8a240dc"
+          }
+        },
+        {
+          "client_id": "739082654608-bji888q5vefor7b2chsjoc5nbtrlom5s.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAl19UQG6XAWr-GGfXngP8NAMmI_Y8FRLA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "739082654608-bji888q5vefor7b2chsjoc5nbtrlom5s.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

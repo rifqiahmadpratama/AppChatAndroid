@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ChatBotActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/toolbar_bot"
+        >
+        <include
+            android:id="@+id/chat_toolbar_bot"
+            layout="@layout/app_bar_layout"
+            >
+        </include>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar_bot"
+        android:layout_above="@+id/chat_linear_layout">
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/idRVChats"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="4dp">
+        </androidx.recyclerview.widget.RecyclerView>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/chat_linear_layout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="6dp"
+        android:orientation="horizontal"
+        android:visibility="visible"
+        android:weightSum="2"
+        android:layout_alignParentLeft="true">
+
+        <LinearLayout
+            android:id="@+id/messageLayout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.8"
+            android:visibility="visible"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:orientation="horizontal"
+            android:layout_alignParentLeft="true">
+
+
+            <EditText
+                android:id="@+id/idEdtMessage"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="1.6"
+                android:layout_marginStart="3dp"
+                android:layout_marginEnd="3dp"
+                android:padding="8dp"
+                android:scrollbars="vertical"
+                android:inputType="textMultiLine"
+                android:paddingStart="10dp"
+                android:background="@drawable/edit_text_background"
+                android:hint="Write message..."
+                android:layout_marginLeft="3dp"
+                android:paddingLeft="10dp" />
+
+        </LinearLayout>
+
+        <com.devlomi.record_view.RecordView
+            android:id="@+id/recordView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.8"
+            android:visibility="gone"
+            app:slide_to_cancel_arrow="@drawable/ic_arrow"
+            app:slide_to_cancel_arrow_color="@color/exo_black_opacity_30"
+            app:slide_to_cancel_text="Slide to cancel"/>
+
+        <ImageButton
+            android:id="@+id/idFABSend"
+            android:layout_width="30dp"
+            android:layout_height="50dp"
+            android:layout_weight=".2"
+            android:layout_gravity="center|bottom"
+            android:layout_marginEnd="5dp"
+            android:background="@drawable/mics"
+            android:src="@drawable/send_message"
+            android:visibility="visible"
+            android:layout_marginRight="5dp" />
+
+
+
+    </LinearLayout>
+
+</RelativeLayout>
